@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Магазин автозапчастей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Каталог запчастей</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О нас</a>
+        </nav>
+    </header>
+
+    <main>
+        <input type="text" id="search" placeholder="Поиск по товарам...">
+        <div id="product-list"></div>
+
+        <h2>Вход для администратора</h2>
+        <div id="login-form">
+            <input type="password" id="admin-password" placeholder="Введите пароль">
+            <button id="login-button">Войти</button>
+        </div>
+
+        <div id="admin-panel" style="display: none;">
+            <h2>Добавить товар</h2>
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Название" required>
+                <input type="text" id="product-price" placeholder="Цена" required>
+                <input type="text" id="product-image" placeholder="Ссылка на изображение" required>
+                <input type="number" id="product-quantity" placeholder="Количество" required min="1">
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Магазин автозапчастей
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
